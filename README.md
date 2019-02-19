@@ -62,7 +62,7 @@ $per_page
 
 **wpc_posts_html**    
 
-To modify the default output of shorcode.
+To modify the default HTML output.
 
 ```PHP
 string $html
@@ -107,7 +107,7 @@ $args = array(
 	'post_type' => 'venue',
 	'meta_query' => array(
 		array(
-			'key'     => 'primary_location',
+			'key'     => 'primary_location', // 'primary_%taxonomy_slug%'
 			'value'   => array( 5, 9 ),
 			'compare' => 'IN',
 		)
